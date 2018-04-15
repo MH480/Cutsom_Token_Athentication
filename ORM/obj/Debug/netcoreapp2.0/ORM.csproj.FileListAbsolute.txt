@@ -1,0 +1,8 @@
+C:\C# Projects\MH Samples\Cutsom_Token_Athentication\ORM\bin\Debug\netcoreapp2.0\ORM.deps.json
+C:\C# Projects\MH Samples\Cutsom_Token_Athentication\ORM\bin\Debug\netcoreapp2.0\ORM.dll
+C:\C# Projects\MH Samples\Cutsom_Token_Athentication\ORM\bin\Debug\netcoreapp2.0\ORM.pdb
+C:\C# Projects\MH Samples\Cutsom_Token_Athentication\ORM\obj\Debug\netcoreapp2.0\ORM.csproj.CoreCompileInputs.cache
+C:\C# Projects\MH Samples\Cutsom_Token_Athentication\ORM\obj\Debug\netcoreapp2.0\ORM.AssemblyInfoInputs.cache
+C:\C# Projects\MH Samples\Cutsom_Token_Athentication\ORM\obj\Debug\netcoreapp2.0\ORM.AssemblyInfo.cs
+C:\C# Projects\MH Samples\Cutsom_Token_Athentication\ORM\obj\Debug\netcoreapp2.0\ORM.dll
+C:\C# Projects\MH Samples\Cutsom_Token_Athentication\ORM\obj\Debug\netcoreapp2.0\ORM.pdb
