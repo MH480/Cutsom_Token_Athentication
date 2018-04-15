@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Models.Models;
 namespace ORM.InfraStructures
 {
     public class TheDbContext : IdentityDbContext<User>

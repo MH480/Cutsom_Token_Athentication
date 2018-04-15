@@ -7,7 +7,10 @@ namespace Services.ExtentionServices
     {
         public static Token CreateToken(this IActions<Token> repo)
         {
-            return null;
+            var token = new Token();
+            repo.Insert(token);
+            repo.SaveChanges();
+            return token;
         }
     }
 }
