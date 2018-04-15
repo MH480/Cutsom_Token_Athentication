@@ -18,6 +18,6 @@ namespace Services.Interfaces
 
         void Delete(IQueryable<Entity> objs);
 
-
+        int SaveChanges();
     }
 }

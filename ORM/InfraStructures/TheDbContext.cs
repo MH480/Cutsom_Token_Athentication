@@ -9,5 +9,10 @@ namespace ORM.InfraStructures
         {
             
         }
+
+        public void OnModelCreating(ModelBuilder builder)
+        {
+            
+        }
     }
 }
