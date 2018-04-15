@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "CustomTokenAuth"
+		},
+		{
+			"path": "Models"
+		},
+		{
+			"path": "ORM"
+		},
+		{
+			"path": "Services"
+		},
+		{
+			"path": "Commen"
+		}
+	],
+	"settings": {}
+}

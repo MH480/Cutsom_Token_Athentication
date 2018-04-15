@@ -1,0 +1,8 @@
+E:\projects\Asp\dot net core\Custom Token Authentication\ORM\bin\Debug\netstandard2.0\ORM.deps.json
+E:\projects\Asp\dot net core\Custom Token Authentication\ORM\bin\Debug\netstandard2.0\ORM.dll
+E:\projects\Asp\dot net core\Custom Token Authentication\ORM\bin\Debug\netstandard2.0\ORM.pdb
+E:\projects\Asp\dot net core\Custom Token Authentication\ORM\obj\Debug\netstandard2.0\ORM.csproj.CoreCompileInputs.cache
+E:\projects\Asp\dot net core\Custom Token Authentication\ORM\obj\Debug\netstandard2.0\ORM.AssemblyInfoInputs.cache
+E:\projects\Asp\dot net core\Custom Token Authentication\ORM\obj\Debug\netstandard2.0\ORM.AssemblyInfo.cs
+E:\projects\Asp\dot net core\Custom Token Authentication\ORM\obj\Debug\netstandard2.0\ORM.dll
+E:\projects\Asp\dot net core\Custom Token Authentication\ORM\obj\Debug\netstandard2.0\ORM.pdb
