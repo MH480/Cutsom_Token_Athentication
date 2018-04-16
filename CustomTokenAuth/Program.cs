@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ORM.InfraStructures;
 
 namespace CustomTokenAuth
 {
@@ -14,7 +16,19 @@ namespace CustomTokenAuth
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            var host = BuildWebHost(args);
+
+    //           using (var scope = host.Services.CreateScope())
+    // {
+    //     // Retrieve your DbContext isntance here
+    //     var dbContext = scope.ServiceProvider.GetService<TheDbContext>();
+ 
+    //     // place your DB seeding code here
+        
+    //     Seed(dbContext);
+    // }
+
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

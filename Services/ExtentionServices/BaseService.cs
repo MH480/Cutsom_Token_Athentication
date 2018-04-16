@@ -14,9 +14,7 @@ namespace Services.ExtentionServices
         {
             context = _context;
         }
-
         
-
         public void Delete(Entity obj)
         {
             context.Set<Entity>().Remove(obj);

@@ -28,8 +28,8 @@ namespace CustomTokenAuth
                     .AddEnvironmentVariables()
                     .AddJsonFile("appsetting.json", true, true)
                     .AddJsonFile($"appsettings.{env.EnvironmentName}.json");
-            if (env.IsDevelopment())
-                builder.AddUserSecrets<Startup>();
+            // if (env.IsDevelopment())
+            //     builder.AddUserSecrets<Startup>();
 
             Configuration = builder.Build();
         }
@@ -47,7 +47,23 @@ namespace CustomTokenAuth
             {
                 context.UseSqlServer(conStr);
             });
-            services.AddIdentity<User, UserRole>()
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 8;
+                options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                
+            });
+
+
+            services.ConfigureApplicationCookie(options =>{
+                options.LoginPath = "/Auth/Login";
+            });
+
+            services.AddIdentity<AppUser, UserRole>()
             .AddEntityFrameworkStores<TheDbContext>()
             .AddDefaultTokenProviders();
         }
@@ -59,7 +75,7 @@ namespace CustomTokenAuth
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseMvc(routers =>

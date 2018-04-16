@@ -3,15 +3,21 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Models.Models;
 namespace ORM.InfraStructures
 {
-    public class TheDbContext : IdentityDbContext<User>
+    public class TheDbContext : IdentityDbContext<AppUser>
     {
+        public TheDbContext()
+        {
+            Database.EnsureCreated();
+        }
+
         public TheDbContext(DbContextOptions<TheDbContext> options):base(options)
         {
             
         }
 
-        public void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
             
         }
     }
