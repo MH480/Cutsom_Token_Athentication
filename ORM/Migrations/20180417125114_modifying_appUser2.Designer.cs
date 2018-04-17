@@ -12,9 +12,10 @@ using System;
 namespace ORM.Migrations
 {
     [DbContext(typeof(TheDbContext))]
-    partial class TheDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180417125114_modifying_appUser2")]
+    partial class modifying_appUser2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

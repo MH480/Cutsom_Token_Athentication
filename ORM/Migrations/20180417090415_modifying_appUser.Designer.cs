@@ -12,9 +12,10 @@ using System;
 namespace ORM.Migrations
 {
     [DbContext(typeof(TheDbContext))]
-    partial class TheDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180417090415_modifying_appUser")]
+    partial class modifying_appUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -144,11 +145,11 @@ namespace ORM.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
-                    b.Property<string>("FirstName");
+                    b.Property<string>("Firstname");
 
                     b.Property<bool>("IsActivated");
 
-                    b.Property<string>("LastName");
+                    b.Property<string>("Lastname");
 
                     b.Property<bool>("LockoutEnabled");
 
@@ -286,7 +287,7 @@ namespace ORM.Migrations
                         .HasForeignKey("OrderId");
 
                     b.HasOne("Models.Models.AppUser", "User")
-                        .WithMany("Conversations")
+                        .WithMany()
                         .HasForeignKey("UserId");
                 });
 

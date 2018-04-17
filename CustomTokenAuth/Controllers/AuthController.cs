@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 using Commen;
 using ORM.InfraStructures;
@@ -25,6 +26,7 @@ namespace CustomTokenAuth.Controllers
         {
             this.mUserManager = userManager;
             this.mSigninManager = signInManager;
+            
         }
 
         public IActionResult index()
@@ -52,10 +54,9 @@ namespace CustomTokenAuth.Controllers
         [HttpPost("Login")]
         public async Task<Token> LoginAsync(UserVM data, string returnUrl)
         {
-            var user = data.MapProp<UserVM, AppUser>(new AppUser());
-            var res = await mSigninManager.PasswordSignInAsync(user, data.Password, true, false);
+            var res = await mSigninManager.PasswordSignInAsync(data.UserName, data.Password, true, false);
             if (res.Succeeded)
-                return new Token(){Hash = "success"};
+                return new Token(){Hash = "success",ExpireDate = DateTime.Now};
             return new Token();
         }
     }
