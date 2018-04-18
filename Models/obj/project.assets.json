@@ -3742,11 +3742,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C# Projects\\MH Samples\\Cutsom_Token_Athentication\\Models\\Models.csproj",
+      "projectUniqueName": "c:\\C# Projects\\MH Samples\\Cutsom_Token_Athentication\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\C# Projects\\MH Samples\\Cutsom_Token_Athentication\\Models\\Models.csproj",
+      "projectPath": "c:\\C# Projects\\MH Samples\\Cutsom_Token_Athentication\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\m.hoseini\\.nuget\\packages\\",
-      "outputPath": "C:\\C# Projects\\MH Samples\\Cutsom_Token_Athentication\\Models\\obj\\",
+      "outputPath": "c:\\C# Projects\\MH Samples\\Cutsom_Token_Athentication\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
